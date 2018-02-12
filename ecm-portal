@@ -1,0 +1,3 @@
+redis:
+  port: 6171
+  host: localhost

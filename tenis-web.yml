@@ -1,0 +1,11 @@
+registry:
+  service: 172.17.8.141
+  port: 8761
+database_ip: 172.17.8.141
+database_port: 5432
+database_username: postgres
+database_password: welcome1
+oauth:
+  server:
+    name: 172.17.8.143
+    port: 8090

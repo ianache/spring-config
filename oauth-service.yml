@@ -5,3 +5,19 @@ database_ip: 192.168.1.203
 database_port: 5432
 database_username: postgres
 database_password: welcome1
+---
+spring:
+  profiles: dev-iap
+registry-service: 172.17.8.141
+database_ip: 172.17.8.141
+database_port: 5432
+database_username: postgres
+database_password: welcome1
+---
+spring:
+  profiles: dev-xnet
+registry-service: 192.168.1.202
+database_ip: 192.168.1.203
+database_port: 5432
+database_username: postgres
+database_password: welcome1

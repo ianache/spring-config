@@ -7,7 +7,7 @@ oauth:
     name: 172.17.8.141
     port: 8090
  
- ---
+---
  spring:
   profiles: prod
   jpa:
@@ -18,4 +18,17 @@ oauth:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://172.17.8.141:5432/postgres
     username: postgres
-    password: welcome1 
+    password: welcome1
+---
+spring:
+  profiles: test
+  jpa:
+    database: H2
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    name: testdb
+    password: testdb
+    platform: h2
+    initialize: true

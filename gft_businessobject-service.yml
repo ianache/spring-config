@@ -8,7 +8,7 @@ oauth:
     port: 8090
  
 ---
- spring:
+spring:
   profiles: prod
   jpa:
     database: POSTGRESQL

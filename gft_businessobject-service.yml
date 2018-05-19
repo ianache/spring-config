@@ -1,0 +1,4 @@
+#default configuration
+registry:
+  port: 8761
+  url: 172.17.8.141

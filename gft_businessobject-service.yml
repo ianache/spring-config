@@ -33,3 +33,16 @@ spring:
     password: testdb
     platform: h2
     initialize: true
+
+---
+spring:
+  profiles: dev-xnet
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.1.203:5432/gftc
+    username: postgres
+    password: welcome1

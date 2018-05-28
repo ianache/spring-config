@@ -38,6 +38,8 @@ spring:
     initialize: false
 
 ---
+
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
 spring:
   profiles: dev-xnet
   jpa:
@@ -52,7 +54,7 @@ spring:
     username: postgres
     password: welcome1
 
-spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+
 
 registry:
   port: 8761

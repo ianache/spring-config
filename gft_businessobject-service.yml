@@ -40,8 +40,7 @@ spring:
 ---
 
 spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-logging.level.org.hibernate.SQL=DEBUG
-logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE 
+
 spring:
   profiles: dev-xnet
   jpa:
@@ -57,6 +56,11 @@ spring:
     password: welcome1
 
 
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
 
 registry:
   port: 8761

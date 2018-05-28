@@ -35,7 +35,7 @@ spring:
     name: testdb
     password: testdb
     platform: h2
-    initialize: true
+    initialize: false
 
 ---
 spring:

@@ -40,7 +40,8 @@ spring:
 ---
 
 spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-
+spring.jpa.properties.hibernate.show_sql: true
+spring.jpa.properties.hibernate.format_sql: true
 spring:
   profiles: dev-xnet
   jpa:
@@ -48,10 +49,7 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-    properties:
-      hibernate:
-        show_sql: true
-        format_sql: true
+  
   datasource:
     platform: postgres
     driver-class-name: org.postgresql.Driver

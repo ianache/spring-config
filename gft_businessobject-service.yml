@@ -87,3 +87,10 @@ spring:
     url: jdbc:postgresql://172.17.8.141:5432/
     username: postgres
     password: welcome1
+registry:
+  port: 8761
+  url: 172.17.8.141
+oauth:
+  server:
+    name: 172.17.8.141
+    port: 8090

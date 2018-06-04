@@ -75,7 +75,7 @@ registry:
   url: 172.17.8.141
 oauth:
   server:
-    name: 172.17.8.143
-#    name: localhost
-    port: 8090
-#    port: 80
+#    name: 172.17.8.143
+    name: localhost
+#    port: 8090
+    port: 80

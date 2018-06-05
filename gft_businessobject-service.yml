@@ -33,7 +33,7 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        show_sql: true
+        show_sql: false
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
@@ -47,7 +47,7 @@ logging:
   level:
     org:
       hibernate:
-        type: trace
+        type: info
         
 registry:
   port: 8761

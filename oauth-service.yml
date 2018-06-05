@@ -51,3 +51,15 @@ spring:
     hibernate:
       default_schema: oauth
 registry-service: 192.168.1.202
+---
+spring:
+  profiles: unit-test
+  jpa:
+    database: H2
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    name: securitydb
+    password: securitydb
+    platform: h2

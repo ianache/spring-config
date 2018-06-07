@@ -82,3 +82,12 @@ oauth:
     name: localhost
 #    port: 8090
     port: 80
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+    ws:
+      crossnet:
+         gftc:
+           businessobject: debug

@@ -87,6 +87,8 @@ logging:
     org:
       hibernate:
         type: trace
+      springframework:
+        type: debug
     ws:
       crossnet:
          gftc:

@@ -23,8 +23,10 @@ logging:
         type: trace
       springframework:
         type: debug
-    com.didarasoftware.security.securityauthserver:
-      type: debug
+    com:
+      didarasoftware:
+        security:
+          type: debug
 ---
 spring:
   profiles: prod  

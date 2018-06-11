@@ -16,6 +16,15 @@ spring:
     hibernate:
       default_schema: oauth
 registry-service: 172.17.8.141
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+      springframework:
+        type: debug
+    com.didarasoftware.security.securityauthserver:
+      type: debug
 ---
 spring:
   profiles: prod  

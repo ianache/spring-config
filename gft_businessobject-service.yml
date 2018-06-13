@@ -69,8 +69,8 @@ spring:
   datasource:
     platform: postgres
     driver-class-name: org.postgresql.Driver
-#    url: jdbc:postgresql://172.17.8.141:5432/
-    url: jdbc:postgresql://192.168.1.203:5432/gftc 
+    url: jdbc:postgresql://172.17.8.141:5432/
+#    url: jdbc:postgresql://192.168.1.203:5432/gftc 
     username: postgres
     password: welcome1
 registry:

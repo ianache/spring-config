@@ -94,3 +94,35 @@ logging:
          gftc:
            businessobject: 
              type: debug
+---
+spring:
+  profiles: dev-iap-mesos
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://172.17.8.141:5432/
+#    url: jdbc:postgresql://192.168.1.203:5432/gftc 
+    username: postgres
+    password: welcome1
+registry:
+  port: 8761
+  url: 172.17.8.141
+oauth:
+  server:
+    name: 172.17.8.141
+    port: 8762
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+      springframework:
+        type: debug
+    ws:
+      crossnet:
+         gftc:
+           businessobject: 
+             type: debug

@@ -46,6 +46,11 @@ spring:
     hibernate:
       default_schema: ISWC_IOT
 
+loging:
+  level:
+    org.springframework.security.oauth2.provider.authentication:
+      level: debug
+
 registry:
   url: 172.17.8.141
   port: 8761

@@ -55,5 +55,5 @@ server:
 
 oauth:
   server:
-    name: 172.17.8.141
-    port: 8083
+    name: 172.17.8.143
+    port: 8090

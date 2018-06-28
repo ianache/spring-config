@@ -51,6 +51,11 @@ loging:
   level:
     org.springframework.security.oauth2.provider.authentication:
       level: debug
+    org:
+      hibernate:
+        type: trace
+      springframework:
+        type: debug                
 
 registry:
   url: 172.17.8.141

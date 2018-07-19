@@ -7,6 +7,6 @@ database_username: postgres
 database_password: welcome1
 oauth:
   server:
---    name: 172.17.8.143
+#    name: 172.17.8.143
     name: localhost
     port: 8090

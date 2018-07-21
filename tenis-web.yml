@@ -10,3 +10,10 @@ oauth:
 #    name: 172.17.8.143
     name: localhost
     port: 8090
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+      springframework:
+        type: debug

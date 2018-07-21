@@ -16,4 +16,4 @@ logging:
       hibernate:
         type: trace
       springframework:
-        type: debug
+        type: trace

@@ -60,5 +60,6 @@ server:
 
 oauth:
   server:
-    name: 172.17.8.143
+#    name: 172.17.8.143
+    name: 127.0.0.1
     port: 8090

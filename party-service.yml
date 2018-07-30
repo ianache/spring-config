@@ -1,0 +1,65 @@
+---
+spring:
+  profiles: dev-xnet
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.1.203:5432/?currentSchema=ISWC_IOT
+    username: postgres
+    password: welcome1
+  properties:
+    hibernate:
+      default_schema: ISWC_IOT
+      
+registry:
+  port: 8761
+  url: 192.168.1.202   
+
+server:
+  port: 80
+
+oauth:
+  server:
+    name: 192.168.1.202
+    port: 8090
+    
+---
+spring:
+  profiles: dev-iap
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://172.17.8.141:5432/?currentSchema=ISWC_IOT
+    username: postgres
+    password: welcome1
+  properties:
+    hibernate:
+      default_schema: ISWC_IOT
+
+loging:
+  level:
+    org.springframework.security.oauth2.provider.authentication:
+      level: debug
+
+registry:
+  url: 172.17.8.141
+  port: 8761
+
+server:
+  port: 80
+
+oauth:
+  server:
+#    name: 172.17.8.143
+    name: 127.0.0.1
+    port: 8090

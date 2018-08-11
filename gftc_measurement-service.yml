@@ -1,4 +1,6 @@
 ---
+spring:
+  profiles: dev-iap
 oauth:
   server:
     name: localhost

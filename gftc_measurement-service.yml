@@ -1,6 +1,22 @@
 ---
 spring:
   profiles: dev-iap
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.1.203:5432/?currentSchema=ISWC_BAM
+    username: postgres
+    password: welcome1
+  properties:
+    hibernate:
+      default_schema: ISWC_BAM
+  
+  
 oauth:
   server:
     name: localhost

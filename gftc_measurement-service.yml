@@ -8,3 +8,6 @@ oauth:
 registry:
   url: 172.17.8.141
   port: 8761
+rest:
+  resource:
+    r0: "rest-measurement-specification-id"

@@ -1,1 +1,8 @@
 
+oauth:
+  server:
+    name: localhost
+    port: 8083
+registry:
+  url: 172.17.8.141
+  port: 8761

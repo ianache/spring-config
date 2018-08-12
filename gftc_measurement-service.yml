@@ -16,7 +16,12 @@ spring:
     hibernate:
       default_schema: ISWC_BAM
   
-  
+logging:
+  level:
+    org:
+      hibernate:
+        type: info
+        
 oauth:
   server:
     name: localhost

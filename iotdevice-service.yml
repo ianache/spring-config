@@ -63,3 +63,13 @@ oauth:
 #    name: 172.17.8.143
     name: 127.0.0.1
     port: 8090
+
+mqtt:
+  url: tcp://172.17.8.190:1883
+  topic: telemetry
+  timeout:
+    completion: 5000
+    connection: 1000
+  qos: 1
+  username: quest
+  password:  quest

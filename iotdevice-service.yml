@@ -65,7 +65,7 @@ oauth:
     port: 8090
 
 mqtt:
-  url: tcp://172.17.8.190:1883
+  url: tcp://test.mosquitto.org:1883
   topic: telemetry
   timeout:
     completion: 5000

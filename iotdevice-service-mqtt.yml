@@ -1,0 +1,25 @@
+---
+spring:
+  profiles: dev-iap
+
+loging:
+  level:
+    org.springframework.security.oauth2.provider.authentication:
+      level: debug
+
+registry:
+  url: 172.17.8.141
+  port: 8761
+
+server:
+  port: 80
+
+mqtt:
+  url: tcp://test.mosquitto.org:1883
+  topic: telemetry
+  timeout:
+    completion: 5000
+    connection: 1000
+  qos: 1
+  username: quest
+  password:  quest

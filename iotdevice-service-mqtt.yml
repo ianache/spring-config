@@ -15,7 +15,8 @@ server:
   port: 80
 
 mqtt:
-  url: tcp://172.17.8.190:1883
+  url: tcp://localhost:1883
+#  url: tcp://172.17.8.190:1883  
   topic: telemetry
   timeout:
     completion: 5000
